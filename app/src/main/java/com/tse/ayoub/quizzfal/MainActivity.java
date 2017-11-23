@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnNextScreen = (Button) findViewById(R.id.btn_norm);
+        Button btnNextScreen2 = (Button) findViewById(R.id.btn_surv);
 
         //Listening to button event
         btnNextScreen.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //Listening to button event
+        btnNextScreen2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                //Starting a new Intent
+                Intent nextScreen = new Intent(getApplicationContext(), QuizzSurvivor.class);
+                startActivity(nextScreen);
+
+            }
+        });
+
     }}
 
 
