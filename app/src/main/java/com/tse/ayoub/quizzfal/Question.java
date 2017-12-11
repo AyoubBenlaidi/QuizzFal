@@ -13,35 +13,32 @@ public class Question {
 
     private String question ;
     private String reponse ;
-    private String propo1;
-    private String propo2;
-    private String propo3;
-    private List<String> propos = new ArrayList<String>();
+    private String proposition1;
+    private String proposition2;
+    private String proposition3;
+    private List<String> propositionsList = new ArrayList<String>();
 
-
-    public List<String> getPropos() {
-        return propos;
+    public List<String> getPropositionsList() {
+        return propositionsList;
     }
 
-    public void randomizeprop() {
+    public void randomizePropositions() {
 
-        propos.add(reponse);
-        propos.add(propo1);
-        propos.add(propo2);
-        propos.add(propo3);
-        Collections.shuffle(propos);
+        propositionsList.add(reponse);
+        propositionsList.add(proposition1);
+        propositionsList.add(proposition2);
+        propositionsList.add(proposition3);
+
+        Collections.shuffle(propositionsList);
 
     }
 
-
-
-    Question(String s , String r , String p1 , String p2 , String p3 ){
-            question=s;
-            reponse=r;
-            propo1=p1;
-            propo2=p2;
-            propo3=p3;
-
+    Question(String question , String reponse , String proposition1 , String proposition2 , String proposition3 ){
+            this.question = question;
+            this.reponse = reponse;
+            this.proposition1 = proposition1;
+            this.proposition2 = proposition2;
+            this.proposition3 = proposition3;
     }
 
     public String getQuestion() {
@@ -60,30 +57,27 @@ public class Question {
         this.reponse = reponse;
     }
 
-    public String getPropo1() {
-        return propo1;
+    public String getProposition1() {
+        return proposition1;
     }
 
-    public void setPropo1(String propo1) {
-        this.propo1 = propo1;
+    public void setProposition1(String proposition1) {
+        this.proposition1 = proposition1;
     }
 
-    public String getPropo2() {
-        return propo2;
+    public String getProposition2() {
+        return proposition2;
     }
 
-    public void setPropo2(String propo2) {
-        this.propo2 = propo2;
+    public void setProposition2(String proposition2) {
+        this.proposition2 = proposition2;
     }
 
-    public String getPropo3() {
-        return propo3;
+    public String getProposition3() {
+        return proposition3;
     }
 
-    public void setPropo3(String propo3) {
-        this.propo3 = propo3;
+    public void setProposition3(String proposition3) {
+        this.proposition3 = proposition3;
     }
-
-
-
 }
