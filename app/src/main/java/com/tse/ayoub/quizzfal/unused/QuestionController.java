@@ -1,4 +1,4 @@
-package com.tse.ayoub.quizzfal;
+package com.tse.ayoub.quizzfal.unused;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class QuestionController {
 
 
 
-    public Question createQuestion(){
+   /* public Question createQuestion(){
         Question question;
 
         int typeQuestion = random.nextInt(3);
@@ -34,7 +34,7 @@ public class QuestionController {
         question.randomizePropositions();
 
         return question;
-    }
+    }*/
 
     private List<String> createInsigneQuestion(int normaleOuInverse) {
         String question = "";
