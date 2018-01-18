@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         //Listening to button event
         btnNextScreen2.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View arg0) {
-                //Starting a new Intent
-                Intent nextScreen = new Intent(getApplicationContext(), QuizzSurvivor.class);
-                startActivity(nextScreen);
-
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                finish();
+                System.exit(0);
             }
         });
 

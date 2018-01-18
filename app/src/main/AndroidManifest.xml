@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".QuizzNormal"></activity>
-        <activity android:name=".QuizzSurvivor"></activity>
         <activity android:name=".Resultats"></activity>
     </application>
 

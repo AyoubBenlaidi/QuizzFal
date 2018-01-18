@@ -167,9 +167,14 @@ public class QuizzNormal extends AppCompatActivity {
 
         if(questionNumber ==5 ){
             //Starting a new Intent
-            Intent nextScreen = new Intent(getApplicationContext(), MainActivity.class);
+            Intent nextScreen = new Intent(getApplicationContext(), Resultats.class);
+            nextScreen.putExtra("score" ,score) ;
             startActivity(nextScreen);
 
         }
     }
+
+
+
+
 }
