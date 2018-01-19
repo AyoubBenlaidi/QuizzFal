@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 //Starting a new Intent
                 Intent nextScreen = new Intent(getApplicationContext(), QuizzNormal.class);
                 startActivity(nextScreen);
+                finish();
 
             }
         });
